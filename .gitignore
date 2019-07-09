@@ -1,0 +1,9 @@
+**.meta
+Library/
+Logs/
+Packages/
+Builds/
+ProjectSettings/
+Temp/
+.vscode/
+.vs/

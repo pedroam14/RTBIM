@@ -1,0 +1,1489 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6346559079756046592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086560}
+  - component: {fileID: 6346559079754792194}
+  - component: {fileID: 6346559079753793474}
+  - component: {fileID: 6346559079749750690}
+  - component: {fileID: 2027925344964335577}
+  m_Layer: 0
+  m_Name: TCFamily TCFamily [6860]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046592}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -7.5, y: 0, z: 9.41}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792194
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046592}
+  m_Mesh: {fileID: 4300008, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793474
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046592}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750690
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &2027925344964335577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6860
+  - ABB
+  - Current Transformer CPB420
+  - https://new.abb.com/high-voltage/instrument-transformers/current/imb
+  - "-40\xB0C to +40 \xB0C"
+  - IMB oil-minimum current transformers are based on a tank type (hairpin) design
+    and available with porcelain or silicone rubber insulators.
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 575
+  - Up to 1.9/8 hrs
+  - 3220
+  - 1600
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Tank (Hairpin) type
+  - Maximum 1000 m
+--- !u!1 &6346559079756046594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086562}
+  m_Layer: 0
+  m_Name: Section
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.586628, y: 16.08, z: 45.731926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6346559079756086570}
+  - {fileID: 6346559079756086568}
+  - {fileID: 6346559079756086574}
+  - {fileID: 6346559079756086572}
+  - {fileID: 6346559079756086560}
+  - {fileID: 6346559079756086566}
+  - {fileID: 6346559079756086564}
+  - {fileID: 6346559079756086586}
+  - {fileID: 6346559079756086584}
+  - {fileID: 6346559079756086590}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6346559079756046596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086564}
+  - component: {fileID: 6346559079754792198}
+  - component: {fileID: 6346559079753793478}
+  - component: {fileID: 6346559079749750694}
+  - component: {fileID: 504849943255071743}
+  m_Layer: 0
+  m_Name: TCFamily TCFamily [7023]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046596}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 9.27, y: 0, z: 9.41}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792198
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046596}
+  m_Mesh: {fileID: 4300012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793478
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046596}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &504849943255071743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 7023
+  - ABB
+  - Current Transformer CPB420
+  - https://new.abb.com/high-voltage/instrument-transformers/current/imb
+  - "-40\xB0C to +40 \xB0C"
+  - IMB oil-minimum current transformers are based on a tank type (hairpin) design
+    and available with porcelain or silicone rubber insulators.
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 575
+  - Up to 1.9/8 hrs
+  - 3220
+  - 1600
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Tank (Hairpin) type
+  - Maximum 1000 m
+--- !u!1 &6346559079756046598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086566}
+  - component: {fileID: 6346559079754792192}
+  - component: {fileID: 6346559079753793472}
+  - component: {fileID: 6346559079749750688}
+  - component: {fileID: 1170134473996944569}
+  m_Layer: 0
+  m_Name: TCFamily TCFamily [6955]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046598}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.15, y: 0, z: 9.41}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792192
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046598}
+  m_Mesh: {fileID: 4300010, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793472
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046598}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750688
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300010, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &1170134473996944569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6955
+  - ABB
+  - Current Transformer CPB420
+  - https://new.abb.com/high-voltage/instrument-transformers/current/imb
+  - "-40\xB0C to +40 \xB0C"
+  - IMB oil-minimum current transformers are based on a tank type (hairpin) design
+    and available with porcelain or silicone rubber insulators.
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 575
+  - Up to 1.9/8 hrs
+  - 3220
+  - 1600
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Tank (Hairpin) type
+  - Maximum 1000 m
+--- !u!1 &6346559079756046600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086568}
+  - component: {fileID: 6346559079754792200}
+  - component: {fileID: 6346559079753793480}
+  - component: {fileID: 6346559079749750696}
+  - component: {fileID: 4407011634802598148}
+  m_Layer: 0
+  m_Name: DisjuntorFamily DisjuntorFamily [6770]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046600}
+  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.49999997, w: 0.50000006}
+  m_LocalPosition: {x: 1.35, y: 0, z: -4}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792200
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046600}
+  m_Mesh: {fileID: 4300002, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793480
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046600}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750696
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &4407011634802598148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6770
+  - Siemens
+  - Circuit Breaker 3AP2FI420
+  - https://www.energy.siemens.com/hq/pool/hq/power-transmission/high-voltage-products/circuit-breaker/hv_products.pdf
+  - "-40\xB0C to +40 \xB0C"
+  - High-Voltage Circuit-Breakers 3AP1/2
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 610
+  - Up to 1.9/8 hrs
+  - 3400
+  - 2000
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Live-tank
+  - Maximum 1000 m
+--- !u!1 &6346559079756046602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086570}
+  - component: {fileID: 6346559079754792202}
+  - component: {fileID: 6346559079753793482}
+  - component: {fileID: 6346559079749750698}
+  - component: {fileID: 1766061996893743214}
+  m_Layer: 0
+  m_Name: "ChaveFamily Padr\xE3o [6765]"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046602}
+  m_LocalRotation: {x: -0.0035928881, y: 0.70709765, z: 0.70709765, w: -0.0035932872}
+  m_LocalPosition: {x: 1.2014523, y: 0, z: -19.525873}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792202
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046602}
+  m_Mesh: {fileID: 4300000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793482
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046602}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100002, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100004, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100006, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100008, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100010, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750698
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &1766061996893743214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6765
+  - ABB
+  - SDF420
+  - https://search-ext.abb.com/library/Download.aspx?DocumentID=1HYD800001E&LanguageCode=en&DocumentPartId=&Action=Launch
+  - "-40\xB0C to 40\xB0C"
+  - Horizontal center break disconnector
+  - Outdoors
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1240
+  - 540
+  - Up to 1.9/8 hrs
+  - 6200
+  - 2400
+  - 25mm/kv
+  - Center Break
+  - Maximum 1000 m
+--- !u!1 &6346559079756046604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086572}
+  - component: {fileID: 6346559079754792204}
+  - component: {fileID: 6346559079753793484}
+  - component: {fileID: 6346559079749750700}
+  - component: {fileID: 6175432772198593744}
+  m_Layer: 0
+  m_Name: DisjuntorFamily DisjuntorFamily [6856]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046604}
+  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.49999997, w: 0.50000006}
+  m_LocalPosition: {x: -7.3, y: 0, z: -4}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792204
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046604}
+  m_Mesh: {fileID: 4300006, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793484
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046604}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750700
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300006, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &6175432772198593744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6856
+  - Siemens
+  - Circuit Breaker 3AP2FI420
+  - https://www.energy.siemens.com/hq/pool/hq/power-transmission/high-voltage-products/circuit-breaker/hv_products.pdf
+  - "-40\xB0C to +40 \xB0C"
+  - High-Voltage Circuit-Breakers 3AP1/2
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 610
+  - Up to 1.9/8 hrs
+  - 3400
+  - 2000
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Live-tank
+  - Maximum 1000 m
+--- !u!1 &6346559079756046606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086574}
+  - component: {fileID: 6346559079754792206}
+  - component: {fileID: 6346559079753793486}
+  - component: {fileID: 6346559079749750702}
+  - component: {fileID: 1145141112003717644}
+  m_Layer: 0
+  m_Name: DisjuntorFamily DisjuntorFamily [6848]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046606}
+  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.49999997, w: 0.50000006}
+  m_LocalPosition: {x: 9.47, y: 0, z: -4}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792206
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046606}
+  m_Mesh: {fileID: 4300004, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793486
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046606}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750702
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &1145141112003717644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 6848
+  - Siemens
+  - Circuit Breaker 3AP2FI420
+  - https://www.energy.siemens.com/hq/pool/hq/power-transmission/high-voltage-products/circuit-breaker/hv_products.pdf
+  - "-40\xB0C to +40 \xB0C"
+  - High-Voltage Circuit-Breakers 3AP1/2
+  - Outdoor
+  - Oil-paper-quartz
+  - Porcelain
+  - 420
+  - 1425
+  - 610
+  - Up to 1.9/8 hrs
+  - 3400
+  - 2000
+  - 25 mm/kV  25 mm/kV 25 mm/kV
+  - Live-tank
+  - Maximum 1000 m
+--- !u!1 &6346559079756046616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086584}
+  - component: {fileID: 6346559079754792218}
+  - component: {fileID: 6346559079753793498}
+  - component: {fileID: 6346559079749750714}
+  - component: {fileID: 5113587951943385540}
+  m_Layer: 0
+  m_Name: TPFamily TPFamily [7324]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046616}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.35, y: 0, z: 18.64}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792218
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046616}
+  m_Mesh: {fileID: 4300016, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793498
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046616}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750714
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300016, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &5113587951943385540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 7324
+  - ABB
+  - Voltage Transformer TVI 420
+  - https://new.abb.com/high-voltage/instrument-transformers/voltage/tvi
+  - "-60 \xB0C to +40 \xB0C"
+  - Gas-insulated instrument transformer for enhanced safety and reliability
+  - Outdoor
+  - SF6
+  - Silicone rubber
+  - 420
+  - 1425
+  - 630
+  - Up to 1.9/8 hrs
+  - 3590
+  - 850
+  - 25 mm/kV  25 mm/kV  25 mm/kV
+  - Inductive type
+  - Maximum 1000 m
+--- !u!1 &6346559079756046618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086586}
+  - component: {fileID: 6346559079754792196}
+  - component: {fileID: 6346559079753793476}
+  - component: {fileID: 6346559079749750692}
+  - component: {fileID: 5000348541039671704}
+  m_Layer: 0
+  m_Name: TPFamily TPFamily [7251]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046618}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -7.3, y: 0, z: 18.64}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792196
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046618}
+  m_Mesh: {fileID: 4300014, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793476
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046618}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750692
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300014, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &5000348541039671704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 7251
+  - ABB
+  - Voltage Transformer TVI 420
+  - https://new.abb.com/high-voltage/instrument-transformers/voltage/tvi
+  - "-60 \xB0C to +40 \xB0C"
+  - Gas-insulated instrument transformer for enhanced safety and reliability
+  - Outdoor
+  - SF6
+  - Silicone rubber
+  - 420
+  - 1425
+  - 630
+  - Up to 1.9/8 hrs
+  - 3590
+  - 850
+  - 25 mm/kV  25 mm/kV  25 mm/kV
+  - Inductive type
+  - Maximum 1000 m
+--- !u!1 &6346559079756046622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6346559079756086590}
+  - component: {fileID: 6346559079754792216}
+  - component: {fileID: 6346559079753793496}
+  - component: {fileID: 6346559079749750712}
+  - component: {fileID: 6394637490800521564}
+  m_Layer: 0
+  m_Name: TPFamily TPFamily [7404]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6346559079756086590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046622}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 9.47, y: 0, z: 18.64}
+  m_LocalScale: {x: 30.48, y: 30.48, z: 30.48}
+  m_Children: []
+  m_Father: {fileID: 6346559079756086562}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6346559079754792216
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046622}
+  m_Mesh: {fileID: 4300018, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!23 &6346559079753793496
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046622}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  - {fileID: 2100012, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &6346559079749750712
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300018, guid: 1241fdc6cd08a11438e400955ee47bb9, type: 3}
+--- !u!114 &6394637490800521564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346559079756046622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b82c7d92d9ae4793693f2dacfad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - Element ID
+  - Manufacturer
+  - Model
+  - URL
+  - Ambient temperature
+  - Description
+  - Installation
+  - Insulation
+  - Insulators
+  - Maximum system voltage (kV)
+  - Impulse Withstand (kv)
+  - Power frequency (kV)
+  - Voltage factor (Vf)
+  - Min Flashover Distance (mm)
+  - Weight (kg)
+  - Creepage distance
+  - Design
+  - Design altitude
+  values:
+  - 7404
+  - ABB
+  - Voltage Transformer TVI 420
+  - https://new.abb.com/high-voltage/instrument-transformers/voltage/tvi
+  - "-60 \xB0C to +40 \xB0C"
+  - Gas-insulated instrument transformer for enhanced safety and reliability
+  - Outdoor
+  - SF6
+  - Silicone rubber
+  - 420
+  - 1425
+  - 630
+  - Up to 1.9/8 hrs
+  - 3590
+  - 850
+  - 25 mm/kV  25 mm/kV  25 mm/kV
+  - Inductive type
+  - Maximum 1000 m

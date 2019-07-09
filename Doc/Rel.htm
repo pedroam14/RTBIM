@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Rel</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="Rel_arquivos/katex.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <article>
+<center>
+<header>
+<h1 class="headline">Trabalho final de Sistemas em Tempo Real - Aplicações BIM em Tempo Real</h1>
+<div class="byline">
+            <h2>Pedro Arantes Mendonça Toledo Almeida - 11621ECP008</h2>
+            <h3> 
+            <time pubdate="" datetime="2018-10-10" title="Dez deOutubro de 2018">Dezembro de 2018</time></h3>
+        </div>
+    </header>
+</center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<h1>1 - Introdução</h1>
+<p>&nbsp; <strong>BIM</strong>, ou <em>Building Information Modeling</em>
+ é um processo que envolve a geração e manuseio de representações 
+digitais de características físicas e funcionais de lugares. BIMs então 
+se tornaram formatos com dados não-proprietários que podem ser trocados 
+para apoiar decisões de construção de edifícios ou outros tipos de 
+construção. Atualmente softwares BIM são usados por indivíduos, negócios
+ e agências governamentais que querem planejar, construir, operar e 
+manter diversas infraestruturas físicas como tratamento de água, dutos 
+de gas, estações elétricas, estradas, rodovias, ferrovias, portos e 
+túneis.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<br>
+<p>
+<img class="center" src="Rel_arquivos/2017-01-bim-model.jpg" .center{="" display:="" block;="" margin-left:="" auto;="" margin-right:="" width:="" 50%="" }=""></p><center><i>
+Figura 1: Exemplo de modelo BIM para projetos estruturais.
+</i></center><br>
+<p>&nbsp; Desde sua concepção nos anos 70 até os dias de hoje, o formato BIM tem <a href="https://www.transparencymarketresearch.com/building-information-modeling-extraction-software-market.html">crescido</a>,
+ principalmente devido ao fato de que os governos países como Estados 
+Unidos, Australia, Alemanha, Finlândia, Dinamarca e Coreia do Sul estão 
+focados em incrementar os aspectos tecnológicos da industria de 
+construção, principalmente nos setores de infraestrutura. Assim como o 
+CAD possibilitou a automação da criação de informação, o BIM possibilita
+ a automação do uso da informação, portanto o uso de BIM tanto nos 
+setores privados quanto públicos tende a crescer.</p>
+<p>&nbsp; No entanto até o momento, as aplicações do BIM se encontram 
+muito limitadas em aplicações em tempo real, devido em parte ao fato de 
+que os softwares de uso dos metadados associados aos modelos costumam 
+ser de custo <a href="https://www.autodesk.com/products/revit/subscribe">extremamente elevado</a>,
+ e não são softwares apropriados para renderização em tempo real. 
+Tornando assim sua aplicação para simulações de projeto, ou projetos que
+ continuam a ser observados e monitorados, após sua criação, até o 
+momento impossível.</p>
+<p>&nbsp; Surge então a motivação do projeto, que é de criar um workflow
+ no qual seja possível usar de ferramentas para a geração de ambientes 
+3D voltados para aplicações em tempo real que contenham os mesmos 
+metadados que um modelo BIM possui.</p>
+<h1>2 - Desenvolvimento</h1>
+<p>&nbsp; Primeiramente é feito um levantamento e seleção dos softwares a serem usados. Sendo eles:</p>
+<ul>
+<li><strong>Revit</strong>: Software da Autodesk voltado a geração de modelos BIM.</li>
+<li><strong>Unity Engine</strong>: <em>Game Engine</em> voltada para aplicações 3D em tempo real.</li>
+<li><strong>Dynamo</strong>: Software open source de scripting visual voltado para BIM.</li>
+</ul>
+<p>&nbsp; Foram escolhidos Revit e Unity pois são respectivamente os 
+softwares mais difundidos para criação de modelos BIM, e criação de 
+ambientes virtuais renderizados em tempo real. Para propósito de teste 
+do workflow a ser proposto, será usado a amostra de projeto BIM que já 
+se encontra presente no Revit.</p>
+<br>
+<p>
+<img class="center" src="Rel_arquivos/sample.png" .center{="" display:="" block;="" margin-left:="" auto;="" margin-right:="" width:="" 50%="" }=""></p><center><i>
+Figura 2: Modelo adotado para o desenvolvimento do projeto.
+</i></center><br>
+<p>&nbsp; Na tentativa inicial de se passar o modelo BIM visto na Figura
+ 2 para a Unity Engine, se depara com o maior dos problemas que ainda 
+atrasam a adoção do BIM como padrão, o problema da <strong>interoperabilidade</strong>.
+ Para que seja possível a passagem da geometria do modelo BIM, ele deve 
+ser convertido para o formato mais comum entre aplicações 3D em tempo 
+real: o <strong>FBX</strong><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
+<p>&nbsp; O FBX é, no momento, um padrão de middleware visando a 
+interoperabilidade entre aplicações em 3D. Sendo usado para transferir 
+informações sobre a geometria dos modelos entre aplicações distintas. O 
+maior problema se encontra exatamente no fato de que apenas a geometria é
+ transferida, e não os dados BIM que os tornam um grande avanço sobre 
+outros modelos. Sem esses metadados, os modelos BIM se tornariam iguais 
+ou até mesmo inferiores em relação a outros formatos na quantidade de 
+informação relevante em aplicações em tempo real devido ao fato de que 
+todos os metadados são perdidos na transferência, e só a geometria é 
+mantida.</p>
+<p>&nbsp; Primeiramente então devemos fazer uma separação dos metadados e
+ da geometria do modelo, e para isso primeiro iremos criar algo que 
+associe os componentes geometricos aos seus respectivos metadados, o que
+ irá permitir a criação de um banco de dados contendo todos os metadados
+ de todos os componentes com um identificador. O componente 
+identificador será denominado <strong>Element ID</strong>. A partir 
+disso, é criado um script visual no Dynamo que atribui esse 
+identificador a todos os componentes da cena, tendo o resultado visto na
+ Tabela 1.</p>
+<br>
+<p>
+</p><table>
+<thead>
+<tr>
+<th style="text-align:center">Script visual Dynamo</th>
+<th style="text-align:center">Schedule</th>
+<th style="text-align:center">Tabela CSV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="Rel_arquivos/DynamoScript.png" alt=""></td>
+<td style="text-align:center"><img src="Rel_arquivos/Schedule.png" alt=""></td>
+<td style="text-align:center"><img src="Rel_arquivos/ScheduleExport.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p></p><center><i>
+Tabela 1: Geração da tabela de banco de dados BIM.
+</i></center><br>
+<p>&nbsp; A partir disso será criado uma <strong>Schedule</strong>, que 
+nada mais é que uma tabela de banco de dados com os dados relevantes que
+ o usuário determinar como sendo relevante para o projeto em questão. O <em>header</em>
+ dessa tabela será o Element ID criado pelo script visto acima, e após 
+essa Schedule ser exportada como arquivo CSV, é exportado também a 
+geometria como se faria normalmente, no formato FBX.</p>
+<p>&nbsp; Após ter em mãos tanto a geometria quanto a tabela CSV, 
+passamos ambos os arquivos para uma cena na Unity Engine. Na Unity então
+ é feito dois scripts na linguagem de programação <strong>C#</strong>, 
+um que irá conter os metadados na forma de um componente, e outro que 
+irá percorrer o arquivo CSV e atribuir aos respectivos objetos o seu 
+conjunto de metadados BIM, usando do Element ID para identificar os 
+objetos respectivos na cena. Após a execução desses scripts estaria 
+então resolvido o maior dos obstaculos de se usar BIM em aplicações em 
+tempo real que é o da interoperabilidade.</p>
+<p>&nbsp; Após isso ter sido feito, finalmente é escrito mais alguns 
+scripts que tornarão a cena um pouco mais interativa, permitindo que o 
+operador do programa navegue a cena, e que o objeto que ele clicar tenha
+ seus metadados visíveis e expostos na GUI. Tendo assim uma solução que 
+permita a visualização, utilização e ultimamente manipulação dos 
+metadados BIM em tempo real.</p>
+<h1>3 - Resultados</h1>
+<p>&nbsp; Após a execução de todos os passos propostos na etapa 2, foi 
+possível obter uma cena conforme o previsto, onde todos os metadados são
+ atribuidos como componentes de objetos em cena, e que são, de fato, 
+manipuláveis e visíveis ao operador. Não só isso mas também foi possível
+ obter uma ótima performance em tempo real devido ao uso do paradigma de
+ programação que visam a otimizar cenas com diversos componentes chamado
+ <strong>Entity Component System</strong><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>.</p>
+<p>&nbsp; Obteve-se os resultados esperados como pode ser visto na 
+Figura 3, onde o usuário é capaz de clicar e expor os metadados BIM de 
+cada objeto desde que o mesmo possua os metadados, de acordo com as 
+tabelas formadas na Tabela 1. Assim, torna-se possível um leque de 
+aplicações para arquivos BIM extremamente versátil. O resultado mostrado
+ na Figura 3 mostra uma das possíveis aplicações, que conta com 
+sensoreamento de gás e fumaça em tempo real de um ambiente através de 
+sensores MQ-2, e é possível verificar que alterações nas condições reais
+ refletem em alterações simultâneas no ambiente virtual, mostrando sua 
+aplicabilidade em tempo real.</p>
+<br>
+<p>
+<img class="center" src="Rel_arquivos/Unity%2520Test.png" .center{="" display:="" block;="" margin-left:="" auto;="" margin-right:="" width:="" 50%="" }=""></p><center><i>
+Figura 3: Resultado da cena em execução, com os metadados expostos.
+</i></center><br>
+<p>&nbsp; Com as otimizações mencionadas acima foi possível obter ótimos
+ resultados tratando-se de performance, mostrados na Tabela 2. Isso é 
+extremamente importante pois, visando a maximização da usabilidade, é 
+crucial que o software seja o mais acessível possível, portanto 
+diminuindo o uso de recursos de hardware.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Performance em Runtime</th>
+<th style="text-align:center">Profiler da Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="Rel_arquivos/Benchmarking1.png" alt=""></td>
+<td style="text-align:center"><img src="Rel_arquivos/Benchmarking2.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p></p><center><i>
+Tabela 2: Análise da performance obtida em runtime
+</i></center><br>
+<p>&nbsp; É possível notar que mesmo com um computador de usuário comum é
+ possível executar a cena, assim é possível fazer o uso desse tipo de 
+aplicação em tempo real de forma muito difundida, se tornando viável 
+tanto para projetos residenciais quanto para grandes edificações.</p>
+<h1>4 - Conclusões</h1>
+<p>&nbsp; Foi possível, com a realização desse trabalho, a criação de um
+ workflow e conjunto de software/hardware que torna possível contornar a
+ grande limitação atual do BIM que é a interoperabilidade. Abrindo as 
+portas para sua implementação em tempo real de forma ampla, sendo 
+possível a manipulação dos seus metadados em tempo real, o que é de 
+grande interesse nas áreas de construção, visualização da informação, 
+simulação, entre outros. Assim torna-se possível a simulação em tempo 
+real com a utilização de metadados BIM, que antes era um processo 
+restrito, extremamente lento e custoso, normalmente sendo levado para 
+outros softwares proprietários como o SolidWorks, e tinham um escopo 
+limitado.</p>
+<p>&nbsp; Pela natureza genérica de Game Engines como Unity e Unreal, 
+torna-se possível a utilização de uma gama extremamente vasta de 
+projetos de simulação e visualização, e com os metadados BIM, a 
+consistência lógica de simulações estruturais seria possível de uma 
+maneira muito mais veloz, versátil e ampla. Podendo simular de ambientes
+ residenciais e comerciais, a modelos de máquinas e veículos.</p>
+<p>&nbsp; Para a prova de conceito, foi possível notar a facilidade com a
+ qual é póssível integrar  essas ferramentas com as de monitoramento em 
+tempo real, como é o caso dos sensores MQ-2, e que assim é possível 
+criar até mesmo redes de sensores para monitorar e simular ambientes 
+reais permitindo uma visão computacional de situações reais muito 
+amplificada, pois sabendo as características físicas dos projetos 
+modelados em BIM, e o estado atual do projeto com ferramentas de 
+monitoramento como sensores e câmeras, seria possível simular as 
+condições de um projeto em tempo real, o que novamente abriria mais 
+possibilidades para trabalhos futuros.</p>
+<h1>5 - Referências</h1>
+<p><a href="https://eric.ed.gov/?id=ED113833">[1]</a>: Eastman, Charles;
+ Fisher, David; Lafue, Gilles; Lividini, Joseph; Stoker, Douglas; 
+Yessios, Christos (September 1974). An Outline of the Building 
+Description System. Institute of Physical Planning, Carnegie-Mellon 
+University.</p>
+<p><a href="https://www.autodesk.com/products/fbx/overview">[2]</a>: FBX Product Overview. <strong>Autodesk</strong>, 1. Dezembro. Disponível em: <a href="https://www.autodesk.com/products/fbx/overview">https://www.autodesk.com/products/fbx/overview</a>. Acesso em primeiro de Dezembro. 2018.<br>
+<a href="http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/">[3]</a>: MARTIN, Adam. Entity Systems are the Future of MMOG Development. <strong>T-Machine</strong>, 1. Dezembro. Disponível em: <a href="http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/">http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/</a>. Acesso em primeiro de Dezembro. 2018.</p>
+</article><hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>1 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
