@@ -189,9 +189,6 @@ In this case deployment was made for real-time virtual monitoring of a real envi
 
 No contributors so far.
 
-## License
-
-No licenses settled on yet.
 
 ## Acknowledgments
 
